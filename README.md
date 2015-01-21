@@ -57,7 +57,7 @@ e. For each model type, models that trained on each subject individually and a g
 
 Ensemble method:
 
-a. AUC only depends on the order of the predictions. From previous competitions, I found the most effective way to ensemble a set of results from different models for AUC metric is to convert each solution to ranks and take the average ranks of all the solutions.
+a. AUC only depends on the order of the predictions. From previous competitions, I found the most effective way to ensemble a set of results from different models for AUC metric is to convert each solution to ranks and then take the weighted average ranks of all the solutions. Different weighting methods were tested. The final choice was an average that was weighted by the public Leader Board Scores to the power of 5 of each individual model.
 
 b. This ensemble method provides about 0.01-0.03 improvements.
 
