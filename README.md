@@ -1,7 +1,16 @@
 # Kaggle-SeizureDetection-Official
 My R code for Kaggle Competition Seizure Detection
 
-I use the post (with a little editing) I posted to Kaggle group after the competition was over as this README. This post described the main ideas for my approach.
+First the steps to run and generate submission files:
+    1. Run read_data_split.r to generate features stored in .RData files for all the subjects
+    2. Run xgboost_split_alldata_sub.r to generate submission file using xgboost
+    3. Run svm_split_alldata_sub.r to generate submission file using svm model trained on all data
+    4. Run svm_split_individual_sub.r to generate submission using SVM models trained for each subject
+    5. Run glmnet_split_alldata_sub.r to generate submission using glmnet model trained on data for all subjects
+    6. Run glment_split_individual_sub.r to generate submission using glmnet model trained for each subject
+    7. Run mix_final_submission.r to ensemble the 5 solutions into a final submission
+
+I use a post (with a little editing) I posted to Kaggle Forum after the competition was over as this README. This post described the main ideas for my approach.
 
 Congratulations to the winners. This competition turned out to be an interesting and fun competition for me unexpectedly.
 I have learned and used many tips from the discussions from other Kagglers in this and other competitions. Even though I did not squeeze into top tier, I still would like to share some of my thoughts and approaches which may provide some aspects that have not been used/mentioned by others. The final private LB scores of this competition is so tight that if I had chose my best private score submission, (I chose my 2nd and 3rd best private scores, which is not too bad. The 2nd best is only 0.006 less than my best score.), I could have jumped by 4-5 positions. I hope someone can find some of the points useful. The sharing and learning environment at Kaggle is the best thing I like about Kaggle.
