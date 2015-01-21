@@ -2,6 +2,7 @@
 My R code for Kaggle Competition Seizure Detection
 
 First the steps to run and generate submission files:
+    
     1. Run read_data_split.r to generate features stored in .RData files for all the subjects
     2. Run xgboost_split_alldata_sub.r to generate submission file using xgboost
     3. Run svm_split_alldata_sub.r to generate submission file using svm model trained on all data
